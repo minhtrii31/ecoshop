@@ -46,6 +46,7 @@ picture {
   background-color: #f4f4f4;
 }
 .body-background-img {
+  object-fit: contain;
   margin: 0 auto;
 }
 .body-news {
@@ -141,6 +142,9 @@ picture {
   }
   .header-brand-nav {
     display: none;
+  }
+  .body-background-img {
+    padding-top: 50px;
   }
   .logo {
     width: 120px;
