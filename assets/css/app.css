@@ -124,6 +124,12 @@ picture {
   color: #333;
   font-weight: 500;
 }
+.header-more-search {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
 /* Responsive */
 @media screen and (max-width: 769px) {
   .header-wrapper {
