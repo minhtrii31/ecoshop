@@ -102,7 +102,7 @@ picture {
   z-index: 10;
 }
 .icon-img {
-  font-size: 2.5rem;
+  font-size: 2rem;
   cursor: pointer;
 }
 .icon-img.hidden {
@@ -129,7 +129,53 @@ picture {
   height: fit-content;
   position: relative;
 }
-
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  padding-right: 4rem;
+  color: #000;
+}
+.input-search::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #000000;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search,
+.input-search:focus {
+  width: 250px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.search-img {
+  font-size: 1.5rem;
+  padding: 16px;
+}
 /* Responsive */
 @media screen and (max-width: 769px) {
   .header-wrapper {
