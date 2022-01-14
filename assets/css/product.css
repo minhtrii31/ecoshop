@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Reset CSS to default */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+/* CSS */
+* {
+  font-size: 62.5%;
+  font-family: Poppins;
+}
+.body {
+  width: 1200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.wrapper {
+  position: relative;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+.product-review {
+  width: 35%;
+  margin-left: 10%;
+}
+.product-review-img {
+  width: 100%;
+}
+.product-slider {
+  display: flex;
+  margin-left: 19%;
+  width: 400px;
+}
+.product-slider-img {
+  width: 20%;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.product-slider-img:first-child {
+  border: 1px solid black;
+}
+.desc {
+  position: absolute;
+  display: block;
+  top: 12%;
+  right: 1%;
+  max-width: 45%;
+}
+.desc-name {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.desc-info {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.hidden {
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  display: none;
+}
+.seemore,
+.seeless {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.seeless {
+  display: none;
+}
+/* .product-slider-img:active,
+.product-slider-img:first-child {
+  border: 1px solid black;
+} */
+.header-brand {
+  position: fixed;
+  left: 1%;
+  top: 2%;
+  z-index: 10;
+}
+.logo {
+  width: 200px;
+}
+.header-brand-nav {
+  list-style-type: none;
+  margin-top: 40px;
+  position: fixed;
+  top: 6%;
+  left: 1%;
+  z-index: 10;
+}
+.header-brand-nav-link {
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 5px 10px;
+  color: #333;
+  font-weight: 500;
+  line-height: 1.3rem;
+}
+.header-more {
+  position: fixed;
+  top: 2%;
+  right: 1%;
+  z-index: 10;
+}
+.icon-img {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.icon-img.hidden {
+  display: none;
+}
+.footer {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 10px;
+}
+.footer-column {
+  list-style-type: none;
+}
+.footer-column-item-link {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.header-more-search {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease;
+  background-color: transparent;
+  padding-right: 4rem;
+  color: #000;
+}
+.input-search::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  font-size: 1.7rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #000000;
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search,
+.input-search:focus {
+  width: 250px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.search-img {
+  font-size: 1.5rem;
+  padding: 16px;
+}
+/* Responsive */
+@media screen and (max-width: 769px) {
+  .header-wrapper {
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+  }
+  .header-brand,
+  .header-more {
+    position: unset;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px 7px 20px;
+  }
+  .header-brand-nav {
+    display: none;
+  }
+  .body-background-img {
+    padding-top: 50px;
+  }
+  .logo {
+    width: 120px;
+  }
+  .icon-img.hidden {
+    display: flex;
+    margin-left: 10px;
+    margin-top: -3px;
+    align-items: center;
+  }
+  .body-news {
+    left: 40%;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer-column {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 415px) {
+  .body-news-title {
+    font-size: 1.5rem;
+  }
+  .body-news-link {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-column-item-link {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 376px) {
+  .footer-column-item-link {
+    font-size: 0.7rem;
+  }
+}
