@@ -272,8 +272,8 @@ option {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-content {
-  width: 30%;
-  height: 35%;
+  width: 600px;
+  height: 300px;
   background-color: #f4f4f4;
   position: relative;
   z-index: 12;
@@ -326,7 +326,18 @@ option {
   cursor: pointer;
 }
 /* Responsive */
+@media screen and (max-width: 1290px) {
+  .body {
+    width: 1000px;
+  }
+}
 @media screen and (max-width: 769px) {
+  .body {
+    width: 750px;
+  }
+  .wrapper {
+    height: 110vh;
+  }
   .header-wrapper {
     width: 100%;
     position: fixed;
@@ -366,8 +377,54 @@ option {
   .footer-column {
     margin: 10px 0;
   }
+  .desc {
+    position: unset;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .product-review {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .product-review-img {
+    padding-top: 30px;
+  }
+  .product-slider {
+    margin-left: 37%;
+  }
+  .desc-name {
+    margin-top: 30px;
+  }
+  #sizeSelect {
+    width: 90%;
+  }
+  .btnBuy {
+    position: unset;
+    margin-left: 10%;
+  }
+  .findStore {
+    position: unset;
+    float: right;
+    margin-top: 70px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .body {
+    width: 550px;
+  }
+  .wrapper {
+    height: 130vh;
+  }
+  .btnBuy {
+    margin-left: 15%;
+  }
 }
 @media screen and (max-width: 415px) {
+  .body {
+    width: 350px;
+  }
   .body-news-title {
     font-size: 1.5rem;
   }
@@ -379,8 +436,22 @@ option {
   .footer-column-item-link {
     font-size: 1rem;
   }
+  .desc-name {
+    font-size: 1.4rem;
+  }
+  .desc-info,
+  .hidden,
+  .title-name {
+    font-size: 1.3rem;
+  }
+  .btnBuy {
+    margin-left: 25%;
+  }
 }
 @media screen and (max-width: 376px) {
+  .wrapper {
+    height: 140vh;
+  }
   .footer-column-item-link {
     font-size: 0.7rem;
   }
