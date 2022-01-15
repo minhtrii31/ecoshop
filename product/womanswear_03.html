@@ -17,185 +17,234 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="header-wrapper">
-        <div class="header-brand">
-          <div class="header-brand-logo">
-            <a href="../index.html"
-              ><img
-                src="../assets/images/logo.png"
-                alt="Modern fonts"
-                class="logo"
-            /></a>
+    <div class="main">
+      <header class="header">
+        <div class="header-wrapper">
+          <div class="header-brand">
+            <div class="header-brand-logo">
+              <a href="../index.html"
+                ><img
+                  src="../assets/images/logo.png"
+                  alt="Modern fonts"
+                  class="logo"
+              /></a>
+            </div>
+            <div class="header-more">
+              <div class="header-more-search">
+                <button class="btn-search">
+                  <i class="fas fa-search search-img"></i>
+                </button>
+                <input
+                  type="text"
+                  class="input-search"
+                  placeholder="Type to Search..."
+                />
+              </div>
+              <ion-icon
+                class="icon-img hidden"
+                name="ellipsis-vertical-outline"
+              ></ion-icon>
+            </div>
           </div>
-          <div class="header-more">
-            <div class="header-more-search">
-              <button class="btn-search">
-                <i class="fas fa-search search-img"></i>
-              </button>
-              <input
-                type="text"
-                class="input-search"
-                placeholder="Type to Search..."
+          <div class="header-brand-nav">
+            <li class="header-brand-nav-item">
+              <a href="../category/men.html" class="header-brand-nav-link"
+                >WARE MEN</a
+              >
+            </li>
+            <li class="header-brand-nav-item">
+              <a href="../category/woman.html" class="header-brand-nav-link"
+                >WARE WOMAN</a
+              >
+            </li>
+            <li class="header-brand-nav-item">
+              <a
+                href="../category/collection.html"
+                class="header-brand-nav-link"
+                >COLLECTIONS</a
+              >
+            </li>
+
+            <li class="header-brand-nav-item">
+              <a href="../category/about_us.html" class="header-brand-nav-link"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="header-brand-nav-item">
+              <a href="../category/stores.html" class="header-brand-nav-link"
+                >STORES</a
+              >
+            </li>
+
+            <li class="header-brand-nav-item">
+              <a href="../category/support.html" class="header-brand-nav-link"
+                >SUPPORT</a
+              >
+            </li>
+          </div>
+        </div>
+      </header>
+      <div class="body">
+        <div class="wrapper">
+          <div class="img-area">
+            <div class="product-review">
+              <img
+                src="../assets/images/w3.jpg"
+                class="product-review-img"
+                id="img"
               />
             </div>
-            <ion-icon
-              class="icon-img hidden"
-              name="ellipsis-vertical-outline"
-            ></ion-icon>
+            <div class="product-slider">
+              <img
+                id="focus"
+                class="product-slider-img"
+                src="../assets/images/w3.jpg"
+              />
+              <img class="product-slider-img" src="../assets/images/w3_b.jpg" />
+            </div>
           </div>
-        </div>
-        <div class="header-brand-nav">
-          <li class="header-brand-nav-item">
-            <a href="../category/men.html" class="header-brand-nav-link"
-              >WARE MEN</a
-            >
-          </li>
-          <li class="header-brand-nav-item">
-            <a href="../category/woman.html" class="header-brand-nav-link"
-              >WARE WOMAN</a
-            >
-          </li>
-          <li class="header-brand-nav-item">
-            <a href="../category/collection.html" class="header-brand-nav-link"
-              >COLLECTIONS</a
-            >
-          </li>
-
-          <li class="header-brand-nav-item">
-            <a href="../category/about_us.html" class="header-brand-nav-link"
-              >ABOUT US</a
-            >
-          </li>
-          <li class="header-brand-nav-item">
-            <a href="../category/stores.html" class="header-brand-nav-link"
-              >STORES</a
-            >
-          </li>
-
-          <li class="header-brand-nav-item">
-            <a href="../category/support.html" class="header-brand-nav-link"
-              >SUPPORT</a
-            >
-          </li>
+          <div class="desc">
+            <h1 class="desc-name">
+              SEASON SUMMER 2022: BLACK AND WHITE SHIRT ESSENTIAL
+            </h1>
+            <span class="desc-info">
+              BOOTS WITH A POINTED TOE AND A STACKED HEEL, FEATURING A FRONT ZIP
+              CLOSURE AND THREE ADJUSTABLE STRAPS WITH METAL BUCKLES.
+            </span>
+            <p class="hidden">
+              - 100% CALFSKIN LEATHER<br />
+              - LEATHER SOLE <br />
+              - FRONT ZIP CLOSURE <br />
+              - TOTAL HEEL HEIGHT: 1.5 CM / 0.5 INCHES<br />
+              - THREE BUCKLES IN SILVER-TONE METAL
+            </p>
+            <span class="title-name seemore" id="seeMore">SEE MORE</span>
+            <span class="title-name seeless" id="seeLess">SEE LESS</span>
+            <span class="title-name waresize">WARE SIZE</span>
+            <select name="sizeSelect" id="sizeSelect">
+              <option value="ws36">WARE SIZE 36</option>
+              <option value="ws37">WARE SIZE 37</option>
+              <option value="ws38">WARE SIZE 38</option>
+              <option value="ws39">WARE SIZE 39</option>
+              <option value="ws40">WARE SIZE 40</option>
+              <option value="ws41">WARE SIZE 41</option>
+              <option value="ws42">WARE SIZE 42</option>
+            </select>
+            <button id="btnBuy" class="btnBuy" onclick="showModal()">
+              ORDER NOW
+            </button>
+            <span class="findStore">FIND STORES</span>
+          </div>
         </div>
       </div>
-    </header>
-    <div class="body">
-      <div class="wrapper">
-        <div class="img-area">
-          <div class="product-review">
-            <img
-              src="../assets/images/w3.jpg"
-              class="product-review-img"
-              id="img"
-            />
-          </div>
-          <div class="product-slider">
-            <img
-              id="focus"
-              class="product-slider-img"
-              src="../assets/images/w3.jpg"
-            />
-            <img class="product-slider-img" src="../assets/images/w3_b.jpg" />
-          </div>
+      <footer class="footer">
+        <div class="footer-column">
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link"
+              >SHIPPING TO INTERNATIONAL(CHANGE)</a
+            >
+          </li>
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">
+              LANGUAGE <br />
+              ENGLISH</a
+            >
+          </li>
         </div>
-        <div class="desc">
-          <h1 class="desc-name">
-            SEASON SUMMER 2022: BLACK AND WHITE SHIRT ESSENTIAL
-          </h1>
-          <span class="desc-info">
-            BOOTS WITH A POINTED TOE AND A STACKED HEEL, FEATURING A FRONT ZIP
-            CLOSURE AND THREE ADJUSTABLE STRAPS WITH METAL BUCKLES.
-          </span>
-          <p class="hidden">
-            - 100% CALFSKIN LEATHER<br />
-            - LEATHER SOLE <br />
-            - FRONT ZIP CLOSURE <br />
-            - TOTAL HEEL HEIGHT: 1.5 CM / 0.5 INCHES<br />
-            - THREE BUCKLES IN SILVER-TONE METAL
-          </p>
-          <span class="title-name seemore" id="seeMore">SEE MORE</span>
-          <span class="title-name seeless" id="seeLess">SEE LESS</span>
-          <span class="title-name waresize">WARE SIZE</span>
-          <select name="sizeSelect" id="sizeSelect">
-            <option value="ws36">WARE SIZE 36</option>
-            <option value="ws37">WARE SIZE 37</option>
-            <option value="ws38">WARE SIZE 38</option>
-            <option value="ws39">WARE SIZE 39</option>
-            <option value="ws40">WARE SIZE 40</option>
-            <option value="ws41">WARE SIZE 41</option>
-            <option value="ws42">WARE SIZE 42</option>
-          </select>
-          <button id="btnBuy" class="btnBuy">ORDER NOW</button>
-          <span class="findStore">FIND STORES</span>
+        <div class="footer-column">
+          <li class="footer-column-item">
+            <a href="" class="footer-column-item-link">
+              CLIENT SERVICE
+              <br />
+              SHIPPING
+              <br />
+              RETURNS
+              <br />
+              +84 20 33 18 59 20</a
+            >
+          </li>
+        </div>
+        <div class="footer-column">
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">CAREER</a>
+          </li>
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">LEGAL NOTICES</a>
+          </li>
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">ACCESSIBILITY</a>
+          </li>
+        </div>
+        <div class="footer-column social-l">
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">FACEBOOK</a>
+          </li>
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">INSTAGRAM</a>
+          </li>
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">TWITTER</a>
+          </li>
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">TIKTOK</a>
+          </li>
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link">YOUTUBE</a>
+          </li>
+        </div>
+
+        <div class="footer-column">
+          <li class="footer-column-item">
+            <a href="#!" class="footer-column-item-link"
+              >SUBSCRIBE TO THE NEWSLETTER</a
+            >
+          </li>
+        </div>
+      </footer>
+    </div>
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <div class="modal-content-title">
+          <h1>ORDER INFORMATION</h1>
+        </div>
+        <div class="modal-content-note">
+          <h2>
+            Please fill out the information completely to be able to order as
+            quickly as possible.
+          </h2>
+        </div>
+        <div class="modal-content-form">
+          <div class="form-name">
+            <span class="form-user">YOUR NAME</span>
+            <input type="text" class="user-input" placeholder="ABC" />
+          </div>
+          <div class="modal-content-form">
+            <span class="form-user">ADDRESS</span>
+            <input
+              type="text"
+              class="user-input"
+              placeholder="xxx Street, District, City ... "
+            />
+          </div>
+          <div class="modal-content-form">
+            <span class="form-user">PHONE</span>
+            <input type="text" class="user-input" placeholder="+84xxxxxxxxx" />
+          </div>
+          <div class="modal-content-form">
+            <input type="checkbox" />
+            <span class="accept-checker"
+              >I agree to these policies and services.</span
+            >
+          </div>
+          <button class="btnAccept">ORDER</button>
+        </div>
+        <div class="modal-exit" onclick="quitModal()">
+          <ion-icon name="close-circle-outline"></ion-icon>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-column">
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link"
-            >SHIPPING TO INTERNATIONAL(CHANGE)</a
-          >
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">
-            LANGUAGE <br />
-            ENGLISH</a
-          >
-        </li>
-      </div>
-      <div class="footer-column">
-        <li class="footer-column-item">
-          <a href="" class="footer-column-item-link">
-            CLIENT SERVICE
-            <br />
-            SHIPPING
-            <br />
-            RETURNS
-            <br />
-            +84 20 33 18 59 20</a
-          >
-        </li>
-      </div>
-      <div class="footer-column">
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">CAREER</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">LEGAL NOTICES</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">ACCESSIBILITY</a>
-        </li>
-      </div>
-      <div class="footer-column social-l">
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">FACEBOOK</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">INSTAGRAM</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">TWITTER</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">TIKTOK</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">YOUTUBE</a>
-        </li>
-      </div>
-
-      <div class="footer-column">
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link"
-            >SUBSCRIBE TO THE NEWSLETTER</a
-          >
-        </li>
-      </div>
-    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

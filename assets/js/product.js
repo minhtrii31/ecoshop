@@ -19,3 +19,9 @@ $("#seeLess").click(function () {
   });
   $("#seeMore").css("display", "block");
 });
+function showModal() {
+  document.getElementById("modal").style.display = "block";
+}
+function quitModal() {
+  document.getElementById("modal").style.display = "none";
+}
