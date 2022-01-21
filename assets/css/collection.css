@@ -41,50 +41,43 @@ picture {
 }
 .body {
   width: 1200px;
-  display: block;
   margin: 0 auto;
   margin-bottom: 20px;
-  background-color: #fff;
 }
-.body-list {
+.collection-list {
   display: grid;
-  grid-column: 3;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4px;
+  grid-template-rows: 400px 400px 400px 450px;
+  gap: 3px;
+  grid-template-areas:
+    "h1 h2 h3"
+    "h1 h4 h4"
+    "h5 h4 h4"
+    "h6 h6 h6";
 }
-.body-list-item {
-  text-decoration: none;
+.collection-img:first-child {
+  grid-area: h1;
 }
-.body-list-item-thumn-img {
-  object-fit: cover;
-  min-height: 100%;
+.collection-img:nth-child(2) {
+  grid-area: h2;
+}
+.collection-img:nth-child(3) {
+  grid-area: h3;
+}
+.collection-img:nth-child(4) {
+  grid-area: h4;
+}
+.collection-img:nth-child(5) {
+  grid-area: h5;
+}
+.collection-img:last-child {
+  grid-area: h6;
+}
+.img {
   width: 100%;
-}
-.body-list-item-desc {
-  margin-top: 5px;
-  margin-bottom: 40px;
-}
-.body-list-item-desc-name {
-  font-size: 1.3rem;
-  color: #333;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.btn-more-item {
-  font-size: 1.5rem;
-  padding: 1.5rem 4rem;
-  line-height: 1rem;
-  letter-spacing: 2px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-  color: #333;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  border-radius: 2rem;
-}
-.btn-more-item:hover {
-  background-color: #f4f4f4;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 .header-brand {
   position: fixed;
@@ -195,23 +188,22 @@ picture {
 /* Responsive */
 @media screen and (max-width: 1281px) {
   .body {
-    width: 800px;
-  }
-  .body-list {
-    grid-column: 2;
-    grid-template-columns: 1fr 1fr;
-  }
-  .body-list-item {
-    text-align: center;
-  }
-  .btn-search:focus ~ .input-search,
-  .input-search:focus {
-    width: 200px;
+    width: 900px;
   }
 }
 @media screen and (max-width: 769px) {
   .body {
     width: calc(100vw - 5vw);
+  }
+  .collection-list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 450px;
+    gap: 3px;
+    grid-template-areas:
+      "h1 h2"
+      "h1 h3"
+      "h5 h4"
+      "h6 h6";
   }
   .header-wrapper {
     width: 100%;
@@ -253,13 +245,10 @@ picture {
     margin: 10px 0;
   }
 }
-@media screen and (max-width: 610px) {
-  .body-list {
-    grid-column: 1;
-    grid-template-columns: 1fr;
-  }
-}
 @media screen and (max-width: 415px) {
+  .collection-list {
+    display: block;
+  }
   .body-news-title {
     font-size: 1.5rem;
   }
@@ -273,9 +262,6 @@ picture {
   }
 }
 @media screen and (max-width: 376px) {
-  .body {
-    margin-top: 10px;
-  }
   .footer-column-item-link {
     font-size: 0.7rem;
   }

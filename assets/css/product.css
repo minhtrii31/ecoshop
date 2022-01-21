@@ -333,7 +333,7 @@ option {
 }
 @media screen and (max-width: 769px) {
   .body {
-    width: 750px;
+    width: calc(100vw - 5vw);
   }
   .wrapper {
     height: 110vh;
@@ -411,9 +411,6 @@ option {
   }
 }
 @media screen and (max-width: 610px) {
-  .body {
-    width: 550px;
-  }
   .wrapper {
     height: 130vh;
   }
@@ -422,9 +419,6 @@ option {
   }
 }
 @media screen and (max-width: 415px) {
-  .body {
-    width: 350px;
-  }
   .body-news-title {
     font-size: 1.5rem;
   }
