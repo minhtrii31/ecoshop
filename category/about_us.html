@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ware Official Store - About Us</title>
     <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/about_us.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -42,41 +43,79 @@
         </div>
         <div class="header-brand-nav">
           <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">WARE MEN</a>
+            <a href="./men" class="header-brand-nav-link">WARE MEN</a>
           </li>
           <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">WARE WOMAN</a>
+            <a href="./woman.html" class="header-brand-nav-link">WARE WOMAN</a>
           </li>
           <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">COLLECTIONS</a>
-          </li>
-
-          <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">ABOUT US</a>
-          </li>
-          <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">STORES</a>
+            <a href="./collection.html" class="header-brand-nav-link"
+              >COLLECTIONS</a
+            >
           </li>
 
           <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">SUPPORT</a>
+            <a href="./about_us.html" class="header-brand-nav-link">ABOUT US</a>
+          </li>
+          <li class="header-brand-nav-item">
+            <a href="./stores.html" class="header-brand-nav-link">STORES</a>
+          </li>
+
+          <li class="header-brand-nav-item">
+            <a href="./support.html" class="header-brand-nav-link">SUPPORT</a>
           </li>
         </div>
       </div>
     </header>
-    <div class="body">
-      <div class="body-background">
-        <img
-          src="https://images.unsplash.com/photo-1608228088998-57828365d486?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1082&q=80"
-          alt=""
-          class="body-background-img"
-        />
+    <div class="background">
+      <div class="background-info">
+        <div class="background-vid">
+          <video
+            class="video"
+            autoplay
+            muted
+            loop
+            controlsList="nodownload"
+            src="../assets/vid/backgroud_1.mp4"
+            id="video"
+          ></video>
+        </div>
+        <div class="text">
+          <h1 id="typing-text"></h1>
+        </div>
       </div>
-      <div class="body-news">
-        <a href="#!" class="news-link"
-          ><div class="body-news-title">SPRING 2022</div>
-          <span class="body-news-link">DISCOVER IT NOW</span></a
-        >
+      <div class="background-subs">
+        <div class="background-subs-wrapper">
+          <div class="subs-thumb">
+            <img
+              src="https://images.unsplash.com/photo-1608228088998-57828365d486?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzaGlvbiUyMHN0b3JlfGVufDB8MHwwfGJsYWNrX2FuZF93aGl0ZXw%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="subs-thumb-img"
+            />
+          </div>
+          <div class="subs-form">
+            <h1 class="subs-name">
+              SUBSCRIBE TO RECEIVER MORE INFORMATION FROM US
+            </h1>
+            <div class="subs-input">
+              <input
+                id="name"
+                type="text"
+                class="input"
+                autocomplete="off"
+                placeholder="YOUR NAME"
+              />
+              <input
+                id="email"
+                type="email"
+                class="input"
+                autocomplete="off"
+                placeholder="YOUR EMAIL"
+              />
+              <button class="btn-accept" onclick="onClick()">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="footer">
@@ -143,6 +182,7 @@
         </li>
       </div>
     </footer>
+    <script src="../assets/js/about_us.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
