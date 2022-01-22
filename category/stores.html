@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ware Official Store - Stores</title>
     <link rel="stylesheet" href="../assets/css/app.css" />
+    <link rel="stylesheet" href="../assets/css/store.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -64,22 +65,37 @@
         </div>
       </div>
     </header>
-    <div class="body">
-      <div class="body-background">
-        <img
-          src="https://images.unsplash.com/photo-1499971442178-8c10fdf5f6ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=691&q=80"
-          alt=""
-          class="body-background-img"
-        />
-      </div>
-      <div class="body-news">
-        <a href="#!" class="news-link"
-          ><div class="body-news-title">SPRING 2022</div>
-          <span class="body-news-link">DISCOVER IT NOW</span></a
-        >
+    <div class="main">
+      <div class="wrapper">
+        <div class="store-list">
+          <h1 class="store-list-title">WARE STORES</h1>
+          <ul class="store-list-menu">
+            <li class="store-list-item">
+              Sunwah Tower, 115 Nguyen Hue, Ben Nghe, District 1, Ho Chi Minh
+              City, Vietnam
+            </li>
+            <li class="store-list-item">
+              39 Ton That Hiep, Ben Nghe, Ditrict 1, Ho Chi Minh City, Vietnam
+            </li>
+            <li class="store-list-item">
+              75-1 Tran Hung Dao Street, Nguyen Thai Binh Ward, Ditrict 1, Ho
+              Chi Minh City, Vietnam
+            </li>
+          </ul>
+        </div>
+        <div class="store-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15677.427043114358!2d106.68446149921489!3d10.783963878784293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1642871717729!5m2!1sen!2s"
+            width="500"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </div>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-column">
         <li class="footer-column-item">
           <a href="#!" class="footer-column-item-link"
@@ -142,7 +158,9 @@
           >
         </li>
       </div>
-    </footer>
+    </footer> -->
+
+    <script src="../assets/js/store.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
