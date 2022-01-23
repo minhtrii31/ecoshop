@@ -36,131 +36,119 @@
               />
             </div>
             <ion-icon
+              id="more"
               class="icon-img hidden"
               name="ellipsis-vertical-outline"
+              onclick="showCategory()"
             ></ion-icon>
           </div>
         </div>
-        <div class="header-brand-nav">
+        <div class="header-brand-nav" id="nav">
           <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">WARE MEN</a>
+            <a href="./men.html" class="header-brand-nav-link">WARE MEN</a>
           </li>
           <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">WARE WOMAN</a>
+            <a href="./woman.html" class="header-brand-nav-link">WARE WOMAN</a>
           </li>
           <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">COLLECTIONS</a>
-          </li>
-
-          <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">ABOUT US</a>
-          </li>
-          <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">STORES</a>
+            <a href="./collection.html" class="header-brand-nav-link"
+              >COLLECTIONS</a
+            >
           </li>
 
           <li class="header-brand-nav-item">
-            <a href="#!" class="header-brand-nav-link">SUPPORT</a>
+            <a href="./about_us.html" class="header-brand-nav-link">ABOUT US</a>
+          </li>
+          <li class="header-brand-nav-item">
+            <a href="./stores.html" class="header-brand-nav-link">STORES</a>
+          </li>
+
+          <li class="header-brand-nav-item">
+            <a href="./support.html" class="header-brand-nav-link">SUPPORT</a>
           </li>
         </div>
       </div>
     </header>
     <div class="main">
       <div class="wrapper">
-        <div class="store-list">
-          <h1 class="store-list-title">WARE STORES</h1>
-          <ul class="store-list-menu">
-            <li class="store-list-item">
-              Sunwah Tower, 115 Nguyen Hue, Ben Nghe, District 1, Ho Chi Minh
-              City, Vietnam
-            </li>
-            <li class="store-list-item">
-              39 Ton That Hiep, Ben Nghe, Ditrict 1, Ho Chi Minh City, Vietnam
-            </li>
-            <li class="store-list-item">
-              75-1 Tran Hung Dao Street, Nguyen Thai Binh Ward, Ditrict 1, Ho
-              Chi Minh City, Vietnam
-            </li>
-          </ul>
+        <div class="store-thumb">
+          <div class="store-thumb-bg">
+            <img
+              src="https://images.unsplash.com/photo-1560180277-9a841af42083?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt=""
+              class="img-bg"
+            />
+            <div class="store-thumb-title">
+              <h1 class="title">OUR STORES</h1>
+            </div>
+          </div>
         </div>
-        <div class="store-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15677.427043114358!2d106.68446149921489!3d10.783963878784293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1642871717729!5m2!1sen!2s"
-            width="500"
-            height="350"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+        <div class="store-info">
+          <div class="store-info-address">
+            <h1 class="address-title">OUR LOCATIONS</h1>
+            <span class="address-info"
+              >BaoViet Building, 233 Dong Khoi, Ben Nghe, District 1, Ho Chi
+              Minh City, Vietnam</span
+            >
+            <span class="address-info"
+              >182-186 Le Duan, Ben Nghe, District 1, Ho Chi Minh City,
+              Vietnam</span
+            >
+            <span class="address-info"
+              >Phan Xich Long, Ward 2, Phu Nhuan, Ho Chi Minh City,
+              Vietnam</span
+            >
+          </div>
+          <div class="store-info-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4355914971993!2d106.70093807637069!3d10.777911907818371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4807554a53%3A0xd621c23149b3aa5d!2zQmFvVmlldCBCdWlsZGluZywgMjMzIMSQ4buTbmcgS2jhu59pLCBC4bq_biBOZ2jDqSwgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1642939986745!5m2!1sen!2s"
+              style="border: 0"
+              loading="lazy"
+              class="map"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
-    <!-- <footer class="footer">
-      <div class="footer-column">
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link"
-            >SHIPPING TO INTERNATIONAL(CHANGE)</a
-          >
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">
-            LANGUAGE <br />
-            ENGLISH</a
-          >
-        </li>
+    <footer class="footer">
+      <div class="footer-item">
+        <div class="footer-logo">
+          <img class="footer-img" src="../assets/images/logo.png" alt="" />
+          <h2 class="footer-desc">
+            WARE - YOUR LIFE - YOUR STYLE - YOUR TIME - ALL FOR YOU
+          </h2>
+        </div>
       </div>
-      <div class="footer-column">
-        <li class="footer-column-item">
-          <a href="" class="footer-column-item-link">
-            CLIENT SERVICE
-            <br />
-            SHIPPING
-            <br />
-            RETURNS
-            <br />
-            +84 20 33 18 59 20</a
-          >
-        </li>
+      <div class="footer-item">
+        <h1 class="footer-title">SHIPPING</h1>
+        <a href="" class="footer-link">SHIPPING VIETNAM(CHANGE)</a>
+        <a href="" class="footer-link">LANGUAGE ENGLISH(CHANGE)</a>
       </div>
-      <div class="footer-column">
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">CAREER</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">LEGAL NOTICES</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">ACCESSIBILITY</a>
-        </li>
+      <div class="footer-item">
+        <h1 class="footer-title">CONTACT</h1>
+        <a href="tel:+842033185920" class="footer-link">+84 20 33 18 59 20</a>
+        <a href="mailto:ware@example.com" class="footer-link">EMAIL</a>
       </div>
-      <div class="footer-column social-l">
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">FACEBOOK</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">INSTAGRAM</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">TWITTER</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">TIKTOK</a>
-        </li>
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link">YOUTUBE</a>
-        </li>
+      <div class="footer-item">
+        <h1 class="footer-title">ABOUT US</h1>
+        <a href="" class="footer-link">CAREER</a>
+        <a href="" class="footer-link">LEGAL NOTICES</a>
+        <a href="" class="footer-link">ACCESSIBILITY</a>
       </div>
-
-      <div class="footer-column">
-        <li class="footer-column-item">
-          <a href="#!" class="footer-column-item-link"
-            >SUBSCRIBE TO THE NEWSLETTER</a
-          >
-        </li>
+      <div class="footer-item">
+        <h1 class="footer-title">SOCIAL</h1>
+        <a href="" class="footer-link">FACEBOOK</a>
+        <a href="" class="footer-link">INSTAGRAM</a>
+        <a href="" class="footer-link">YOUTUBE</a>
+        <a href="" class="footer-link">TIKTOK</a>
+        <a href="" class="footer-link">TWITTER</a>
       </div>
-    </footer> -->
-
+      <div class="footer-item">
+        <h1 class="footer-title">SUBSCRIBE</h1>
+      </div>
+    </footer>
     <script src="../assets/js/store.js"></script>
+    <script src="../assets/js/app.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -168,6 +156,10 @@
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"
     ></script>
   </body>
 </html>
