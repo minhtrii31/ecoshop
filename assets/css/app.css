@@ -188,6 +188,12 @@ picture {
   font-size: 1.5rem;
   padding: 16px;
 }
+.separate {
+  width: 100%;
+  height: 3px;
+  margin: 50px 0 20px 0;
+  border-bottom: 1px solid #ccc;
+}
 /* Responsive */
 @media screen and (max-width: 769px) {
   .body-background-img {
