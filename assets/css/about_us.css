@@ -101,13 +101,10 @@
   }
   .video {
     padding-top: 70px;
-    width: 100vh;
   }
   .subs-name {
     margin-top: 30px;
     text-align: center;
-  }
-  .text {
   }
 }
 @media screen and (max-width: 601px) {
@@ -115,8 +112,7 @@
     object-position: 25% 30%;
   }
   #typing-text {
-    font-size: 1.5rem;
-    margin-top: 50%;
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 376px) {
@@ -131,5 +127,6 @@
   }
   #typing-text {
     font-size: 1rem;
+    margin-top: 80px;
   }
 }
