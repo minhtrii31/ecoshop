@@ -7,15 +7,15 @@ $(".product-slider-img").click(function () {
 });
 $("#seeMore").click(function () {
   $(this).css("display", "none");
-  $(".hidden").slideToggle("slow", function () {
-    $(".hidden").css("display", "block");
+  $("p.hidden").slideToggle("slow", function () {
+    $("p.hidden").css("display", "block");
   });
   $("#seeLess").css("display", "block");
 });
 $("#seeLess").click(function () {
   $(this).css("display", "none");
-  $(".hidden").slideToggle("slow", function () {
-    $(".hidden").css("display", "none");
+  $("p.hidden").slideToggle("slow", function () {
+    $("p.hidden").css("display", "none");
   });
   $("#seeMore").css("display", "block");
 });

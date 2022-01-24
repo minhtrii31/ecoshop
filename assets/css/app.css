@@ -250,6 +250,9 @@ picture {
   .footer-item {
     margin: 0 10px;
   }
+  .logo {
+    width: 120px;
+  }
 }
 @media screen and (max-width: 601px) {
   .footer {
