@@ -116,6 +116,9 @@ option {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+#img {
+  cursor: pointer;
+}
 .modal-big-img {
   position: relative;
   border-radius: 5px;
@@ -214,14 +217,14 @@ option {
   .modal-content {
     width: 80vw;
   }
+  #img-big {
+    width: 70%;
+  }
   #big-img-src {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     padding: 70px 0;
   }
-}
-#img {
-  cursor: pointer;
 }
 @media screen and (max-width: 510px) {
   .user-input {
@@ -232,6 +235,14 @@ option {
   }
   .product-review {
     padding: 20px;
+  }
+  #img-big {
+    width: 70%;
+  }
+  #big-img-src {
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 0;
   }
   #img {
     padding-top: 10px;
