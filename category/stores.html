@@ -7,6 +7,11 @@
     <title>Ware Official Store - Stores</title>
     <link rel="stylesheet" href="../assets/css/app.css" />
     <link rel="stylesheet" href="../assets/css/store.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -86,15 +91,15 @@
         <div class="store-info">
           <div class="store-info-address">
             <h1 class="address-title">OUR LOCATIONS</h1>
-            <span class="address-info"
+            <span class="address-info" id="l1"
               >BaoViet Building, 233 Dong Khoi, Ben Nghe, District 1, Ho Chi
               Minh City, Vietnam</span
             >
-            <span class="address-info"
+            <span class="address-info" id="l2"
               >182-186 Le Duan, Ben Nghe, District 1, Ho Chi Minh City,
               Vietnam</span
             >
-            <span class="address-info"
+            <span class="address-info" id="l3"
               >Phan Xich Long, Ward 2, Phu Nhuan, Ho Chi Minh City,
               Vietnam</span
             >
@@ -105,6 +110,7 @@
               style="border: 0"
               loading="lazy"
               class="map"
+              id="map"
             ></iframe>
           </div>
         </div>

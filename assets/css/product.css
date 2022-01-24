@@ -48,8 +48,9 @@ picture {
 }
 .wrapper {
   position: relative;
-  height: 100vh;
+  height: 100%;
   background-color: #f4f4f4;
+  padding-bottom: 30px;
 }
 .product-review {
   width: 35%;
