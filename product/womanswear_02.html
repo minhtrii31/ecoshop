@@ -67,7 +67,6 @@
                 >COLLECTIONS</a
               >
             </li>
-
             <li class="header-brand-nav-item">
               <a href="../category/about_us.html" class="header-brand-nav-link"
                 >ABOUT US</a
@@ -78,7 +77,6 @@
                 >STORES</a
               >
             </li>
-
             <li class="header-brand-nav-item">
               <a href="../category/support.html" class="header-brand-nav-link"
                 >SUPPORT</a
@@ -95,6 +93,7 @@
                 src="../assets/images/w2.jpg"
                 class="product-review-img"
                 id="img"
+                onclick="showBigImg()"
               />
             </div>
             <div class="product-slider">
@@ -145,7 +144,7 @@
       <footer class="footer">
         <div class="footer-item">
           <div class="footer-logo">
-            <img class="footer-img" src="./assets/images/logo.png" alt="" />
+            <img class="footer-img" src="../assets/images/logo.png" alt="" />
             <h2 class="footer-desc">
               WARE - YOUR LIFE - YOUR STYLE - YOUR TIME - ALL FOR YOU
             </h2>
@@ -182,8 +181,8 @@
     </div>
     <!-- Modal -->
     <div id="modal" class="modal">
-      <div class="modal-overlay"></div>
-      <div class="modal-content">
+      <div class="modal-overlay" onclick="closeBigImg()"></div>
+      <div class="modal-content" id="content">
         <div class="modal-content-title">
           <h1>ORDER INFORMATION</h1>
         </div>
@@ -195,22 +194,22 @@
         </div>
         <div class="modal-content-form">
           <div class="form-name">
-            <span class="form-user">YOUR NAME</span>
+            <p class="form-user">YOUR NAME</p>
             <input type="text" class="user-input" placeholder="ABC" />
           </div>
-          <div class="modal-content-form">
-            <span class="form-user">ADDRESS</span>
+          <div class="form-name">
+            <p class="form-user">ADDRESS</p>
             <input
               type="text"
               class="user-input"
               placeholder="xxx Street, District, City ... "
             />
           </div>
-          <div class="modal-content-form">
-            <span class="form-user">PHONE</span>
+          <div class="form-name">
+            <p class="form-user">PHONE</p>
             <input type="text" class="user-input" placeholder="+84xxxxxxxxx" />
           </div>
-          <div class="modal-content-form">
+          <div class="form-checked">
             <input type="checkbox" />
             <span class="accept-checker"
               >I agree to these policies and services.</span
@@ -221,6 +220,9 @@
         <div class="modal-exit" onclick="quitModal()">
           <ion-icon name="close-circle-outline"></ion-icon>
         </div>
+      </div>
+      <div class="modal-big-img" id="img-big">
+        <img src="" alt="" id="big-img-src" />
       </div>
     </div>
     <script src="../assets/js/product.js"></script>

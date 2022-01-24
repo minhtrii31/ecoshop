@@ -93,6 +93,7 @@
                 src="../assets/images/m1.jpg"
                 class="product-review-img"
                 id="img"
+                onclick="showBigImg()"
               />
             </div>
             <div class="product-slider">
@@ -146,7 +147,7 @@
       <footer class="footer">
         <div class="footer-item">
           <div class="footer-logo">
-            <img class="footer-img" src="./assets/images/logo.png" alt="" />
+            <img class="footer-img" src="../assets/images/logo.png" alt="" />
             <h2 class="footer-desc">
               WARE - YOUR LIFE - YOUR STYLE - YOUR TIME - ALL FOR YOU
             </h2>
@@ -183,8 +184,8 @@
     </div>
     <!-- Modal -->
     <div id="modal" class="modal">
-      <div class="modal-overlay"></div>
-      <div class="modal-content">
+      <div class="modal-overlay" onclick="closeBigImg()"></div>
+      <div class="modal-content" id="content">
         <div class="modal-content-title">
           <h1>ORDER INFORMATION</h1>
         </div>
@@ -222,6 +223,9 @@
         <div class="modal-exit" onclick="quitModal()">
           <ion-icon name="close-circle-outline"></ion-icon>
         </div>
+      </div>
+      <div class="modal-big-img" id="img-big">
+        <img src="" alt="" id="big-img-src" />
       </div>
     </div>
     <script src="../assets/js/product.js"></script>

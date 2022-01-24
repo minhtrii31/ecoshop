@@ -21,7 +21,22 @@ $("#seeLess").click(function () {
 });
 function showModal() {
   document.getElementById("modal").style.display = "block";
+  document.getElementById("content").style.display = "block";
 }
 function quitModal() {
+  document.getElementById("content").style.display = "none";
   document.getElementById("modal").style.display = "none";
+}
+// Show big img
+function showBigImg() {
+  var currentImageSrc = $("#img").attr("src");
+  $("#big-img-src").attr("src", currentImageSrc);
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("img-big").style.display = "block";
+}
+// Close all
+function closeBigImg() {
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("img-big").style.display = "none";
+  document.getElementById("content").style.display = "none";
 }
