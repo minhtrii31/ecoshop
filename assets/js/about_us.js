@@ -10,13 +10,3 @@ window.onload = function typingTxt() {
     setTimeout(typingTxt, 100);
   }
 };
-// Alert box
-var _name = document.getElementById("name").value;
-var _email = document.getElementById("email").value;
-function onClick() {
-  if (_name.length == 0 || _email.length == 0) {
-    alert("Please fill full all information!");
-  } else {
-    alert("Subscribe successfully!");
-  }
-}
